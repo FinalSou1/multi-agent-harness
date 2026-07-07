@@ -1,0 +1,13 @@
+# secrets - never commit a real key
+.env
+
+# demo output
+outbox.json
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/

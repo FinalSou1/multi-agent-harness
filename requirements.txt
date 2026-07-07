@@ -1,0 +1,2 @@
+# No third-party dependencies. The project runs on the Python standard library.
+# Python 3.10 or newer is recommended.
