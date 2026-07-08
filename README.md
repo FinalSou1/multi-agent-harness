@@ -1,5 +1,7 @@
 # multi-agent-harness
 
+[![tests](https://github.com/FinalSou1/multi-agent-harness/actions/workflows/tests.yml/badge.svg)](https://github.com/FinalSou1/multi-agent-harness/actions/workflows/tests.yml)
+
 A compact, dependency-free reference implementation of a **multi-agent harness** that
 handles an inbox end to end: it triages email, drafts replies, raises notifications and
 reminders, and — critically — **keeps a human in the loop** so nothing reaches a person
@@ -82,6 +84,12 @@ you through each draft and sends nothing until you type `y`.
 | `demos/mini_assistant.py` | Demo 2: the same harness on a general goal |
 | `data/sample_emails.json` | the mock inbox (includes one injection attempt) |
 | `tests/` | offline, deterministic tests |
+
+## Operations
+
+CI runs the offline test suite on every push. The [Dockerfile](Dockerfile) builds a
+container whose default command is the test suite. [DEPLOYMENT.md](DEPLOYMENT.md)
+describes the health-gated deploy pattern the production sibling of this repo runs on.
 
 ## Honest notes
 
